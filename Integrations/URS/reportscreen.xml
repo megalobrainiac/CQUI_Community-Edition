@@ -3,7 +3,7 @@
 
   <Container Style="FullScreenVignetteConsumer" />
 
-  <Box						ID="Main"						Anchor="C,C"									Size="1024,759"						Color="11,27,40,255">
+  <Box						ID="Main"						Anchor="C,C"									Size="1024,789"						Color="11,27,40,255">
     <Grid															Anchor="C,C"									Size="parent+9,parent+9"	Style="WindowFrameTopOnly" />
     <Button				ID="CloseButton"		Anchor="R,T"	Offset="-3,-1"	Size="44,44"																			Texture="Controls_CloseLarge"  />
     <Image														Anchor="C,T"									Size="parent,44"					Color="61,112,154,255"	Texture="Controls_Gradient_HalfRadial"  />
@@ -128,12 +128,12 @@
     <Container		ID="BottomResourceTotals"	Anchor="C,B"	Offset="0,0"		Size="parent-6,100" >
       <Grid																	Anchor="C,T"	Offset="0,0"		Size="parent,8"							Style="Divider3Grid" />
       <Image																Anchor="C,B"	Offset="0,2"		Size="parent,parent"				Texture="Controls_Gradient" Color="255,255,255,32">
-        <Grid			ID="StrategicGrid"											Offset="5,10"		Size="parent-515,40"				Style="SubContainer4"				Color="36,50,62,255" InnerPadding="2,2">
+        <Grid			ID="StrategicGrid"											Offset="5,10"		Size="parent-515,46"				Style="SubContainer4"				Color="36,50,62,255" InnerPadding="2,2">
           <!-- <Label																					Offset="5,0"																Style="ReportResourceText"	String="LOC_HUD_REPORTS_STRATEGICS" /> -->
           <GridButton   ID="StrategicCheckbox"  Anchor="L,C" Style="CheckBoxControl" String="LOC_HUD_REPORTS_STRATEGICS" Size="120,25" Offset="5,0" Hidden="0" />
-          <Stack	ID="StrategicResources"		Anchor="L,C"	Offset="150,0"	WrapWidth="340"	WrapGrowth="Down"	StackGrowth="Right" />
+          <Stack	ID="StrategicResources"		Anchor="L,C"	Offset="110,0"	WrapWidth="400"	WrapGrowth="Down"	StackGrowth="Right" Padding="1"/>
         </Grid>
-        <Grid			ID="BonusGrid"													Offset="510,10"	Size="parent-515,40"				Style="SubContainer4"				Color="36,50,62,255" InnerPadding="2,2">
+        <Grid			ID="BonusGrid"													Offset="510,10"	Size="parent-515,46"				Style="SubContainer4"				Color="36,50,62,255" InnerPadding="2,2">
           <!-- <Label																					Offset="5,0"																Style="ReportResourceText"	String="LOC_HUD_REPORTS_BONUSES" /> -->
           <GridButton   ID="BonusCheckbox"  Anchor="L,C" Style="CheckBoxControl" String="LOC_HUD_REPORTS_BONUSES_URS" Size="120,25" Offset="5,0" Hidden="0" />
           <Stack	ID="BonusResources"				Anchor="L,C"	Offset="150,0"	WrapWidth="340"	WrapGrowth="Down"	StackGrowth="Right" />
@@ -650,7 +650,7 @@
 
   <!-- Resource-->
   <Instance					Name="ResourceAmountInstance">
-      <Label					ID="Info" Style="ReportResourceText" String="00" />
+      <Label					ID="Info" Anchor="L,T" Style="ReportResourceText" String="00" />
   </Instance>
 
 
